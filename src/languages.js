@@ -187,6 +187,11 @@
       apply();
     }
   });
+  var languageGlobe = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  languageGlobe.setAttribute('class', 'language-globe'); languageGlobe.setAttribute('aria-hidden', 'true');
+  var globeUse = document.createElementNS('http://www.w3.org/2000/svg', 'use'); globeUse.setAttribute('href', '#globe');
+  languageGlobe.appendChild(globeUse);
+  document.getElementById('portal-language').insertBefore(languageGlobe, document.getElementById('portal-language-value'));
   label.hidden = enabled.length < 2;
   var originals = new WeakMap(), attributeOriginals = new WeakMap();
   var skip = 'script,style,svg,textarea,[data-no-i18n],#header-brand,#network-name,#footer-name,#custom-footer-logo,#form-auth-title,#form-auth-note,#policy-note,#policy-note-link,.card-item-outer>.title,.choice-item .text,.score-tip';

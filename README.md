@@ -7,7 +7,8 @@ The repository uses neutral **Your Brand** placeholders. Official vendor logos a
 ## Features
 
 - Independent header logo and name visibility; keep Guest Wi-Fi visible without a divider when both are hidden.
-- Custom header text, logo, connection icon, favicon and powered-by attribution.
+- Custom header text, logo, connection icon, favicon, independent browser tab title and powered-by attribution.
+- Compact globe language button and one-row mobile header; long branding text truncates only when needed.
 - Network badge uses the controller-provided SSID, with a configurable fallback.
 - English, Simplified Chinese, Bahasa Melayu and Tamil; enable several languages and let guests switch without losing their entered details.
 - Styled language and preview menus with keyboard navigation and consistent arrow spacing.

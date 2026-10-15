@@ -9,6 +9,8 @@ window.PORTAL_CONFIG = {
   showHeaderSubtitle: true,
   headerText: "Your Brand",
   headerSubtitle: "Guest Wi-Fi",
+  // Blank derives the tab title from the configured text, independent of visibility.
+  pageTitle: "",
   // Fallback for wired clients or when the controller omits ssidName.
   // The connected Wi-Fi SSID takes precedence whenever it is available.
   connectionName: "Guest Wi-Fi",

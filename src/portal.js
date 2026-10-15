@@ -50,7 +50,7 @@
   $id('header-brand').setAttribute('aria-label', [showName ? headerName : '', showSubtitle ? subtitle : '', 'home'].filter(Boolean).join(' '));
   $id('header-brand').hidden = !showLogo && !showName && !showSubtitle;
   document.querySelector('.header').classList.toggle('header-unbranded', $id('header-brand').hidden);
-  document.title = 'Welcome · ' + [showName ? headerName : '', showSubtitle ? subtitle : ''].filter(Boolean).join(' ');
+  document.title = configuredText(config.pageTitle, 'Welcome · ' + [headerName, subtitle].filter(Boolean).join(' '));
   if (showLogo) customiseImage(config.logoImage, 'custom-brand-logo', 'default-brand-logo');
   customiseImage(config.connectionIconImage, 'custom-connection-icon', 'default-connection-icon');
   $id('footer-name').textContent = configuredText(config.footerText, 'Your Brand');

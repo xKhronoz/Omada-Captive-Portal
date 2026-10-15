@@ -14,7 +14,7 @@
 @media(max-width:480px){.header .brand small,.header .brand-divider{display:none}.header .brand-name{font-size:26px}}
 
 /* Language remains available when header branding is disabled. */
-.header .header-actions{display:flex;align-items:center;justify-content:flex-end;gap:20px;flex-shrink:0}
+.header .header-actions{display:flex;align-items:center;justify-content:flex-end;gap:20px;flex-shrink:0;flex-wrap:nowrap;white-space:nowrap}
 .header .brand{max-width:calc(100% - 290px)}
 .header-unbranded{justify-content:flex-end}
 .header .language{margin:0;padding:0;border:0;gap:7px;color:#506f5d}
@@ -39,7 +39,7 @@ html:not([lang=en]) .consent>label{line-height:1.9}
 .brand-name-hidden .brand-copy .brand-divider{margin-left:0}
 #custom-footer-logo{display:inline-block;width:76px;height:29px;object-fit:contain;margin-left:6px;vertical-align:middle}
 .header .brand small:not([hidden]),.header .brand-divider:not([hidden]){display:block}
-@media(max-width:760px){.header{flex-wrap:wrap;gap:12px}.header .brand{max-width:100%;flex:0 1 auto}.header .header-actions{margin-left:auto}.header .brand small{font-size:12px}.dropdown-trigger{min-width:112px;min-height:40px;font-size:11px;padding-right:18px;gap:10px}.dropdown-options{min-width:178px}}
+@media(max-width:760px){.header{flex-wrap:nowrap;gap:12px}.header .brand{max-width:100%;flex:0 1 auto}.header .header-actions{margin-left:auto}.header .brand small{font-size:12px}.dropdown-trigger{min-width:112px;min-height:40px;font-size:11px;padding-right:18px;gap:10px}.dropdown-options{min-width:178px}}
 .redirect-panel{padding:14px;margin:20px 0;background:#f2f7ef;border:1px solid #e1eadd;border-radius:10px}.redirect-panel p{margin:0 0 14px!important}.redirect-panel strong{color:var(--teal);font-variant-numeric:tabular-nums}.redirect-panel .connect-button{min-height:42px}.redirect-panel:not([hidden])~#preview-again{margin-top:12px}
 
 #preview-notice{position:relative;z-index:10}
@@ -47,3 +47,24 @@ html:not([lang=en]) .consent>label{line-height:1.9}
 #preview-picker .dropdown-options [role=option]{white-space:normal}
 #preview-picker .dropdown-trigger{min-width:190px;max-width:100%}
 @media(max-width:760px){#preview-picker{max-width:100%}#preview-picker .dropdown-trigger{font-size:11px}}
+
+/* Reserve one row for branding, language and Help, even on narrow screens. */
+.language-globe{display:block;width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.header .help-link{white-space:nowrap;flex-shrink:0}
+@media(max-width:760px){
+  .header .brand{flex:1 1 auto;min-width:0;max-width:none;gap:6px}
+  .header .brand-mark{width:24px;height:24px;flex:0 0 24px}
+  .header .brand>.brand-copy{flex:1 1 auto;min-width:0}
+  .header .brand-name{font-size:22px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;overflow-wrap:normal;flex:0 1 auto}
+  .header .brand small{font-size:11px;min-width:0;flex:0 1 auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .header .brand-divider{margin:0 8px;height:18px}
+  .header .header-actions{flex:0 0 auto;margin-left:auto;gap:4px}
+  .header .help-link{width:32px;min-height:40px;padding:6px;justify-content:center}
+  .header .language>.dropdown-trigger{width:40px;min-width:40px;max-width:40px;min-height:40px;gap:0;padding:9px;justify-content:center}
+  .header .language-globe{display:block}
+  #portal-language-value,.header .language .dropdown-chevron{display:none}
+}
+
+/* A compact globe opens the full language list at every screen size. */
+.header .language>.dropdown-trigger{width:40px;min-width:40px;max-width:40px;min-height:40px;gap:0;padding:9px;justify-content:center}
+#portal-language-value,.header .language .dropdown-chevron{display:none}

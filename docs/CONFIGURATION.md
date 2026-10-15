@@ -13,12 +13,19 @@ JSON overrides passed with `--brand-config` are merged over these defaults durin
 | `showHeaderSubtitle` | `true` | Show the subtitle when its text is non-empty. |
 | `headerText` | `"Your Brand"` | Header name. Blank or invalid values fall back to the default. |
 | `headerSubtitle` | `"Guest Wi-Fi"` | Header subtitle. An empty string hides it. |
+| `pageTitle` | `""` | Browser tab title. Blank uses Welcome · followed by the configured header name and subtitle, regardless of their visibility toggles. |
 | `connectionName` | `"Guest Wi-Fi"` | Network badge fallback; the controller-supplied `ssidName` takes precedence. |
 | `logoImage` | `""` | Header image. Blank uses the neutral Wi-Fi mark. |
 | `connectionIconImage` | `""` | Image in the connection card. Blank uses the Wi-Fi icon. |
 | `faviconImage` | `"mark.svg"` | Browser tab icon. |
 | `footerText` | `"Your Brand"` | Name beside the powered-by text. |
 | `footerLogoImage` | `""` | Optional footer image in place of the footer name. |
+
+The mobile header stays on one row. Language selection uses a compact globe button at every screen size. The menu lists full language names and marks the current selection. Long brand names and subtitles truncate only when needed; accessible names retain their full text.
+
+### Browser tab title
+
+`showBrandName`, `showBrandLogo` and `showHeaderSubtitle` affect only the page header. They never change the browser tab title. Set `pageTitle` to a fixed title, for example `"My Venue · Guest Wi-Fi"`, to also keep it independent of changes to the configured branding text.
 
 ### Divider visibility
 

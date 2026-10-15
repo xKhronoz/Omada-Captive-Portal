@@ -17,5 +17,6 @@
   "defaultLanguage": "en",
   "detectBrowserLanguage": true,
   "showRedirectionCountdownAfterAuthorization": true,
-  "redirectionCountdownSeconds": 5
+  "redirectionCountdownSeconds": 5,
+  "pageTitle": "My Venue \u00b7 Guest Wi-Fi"
 }
