@@ -15,7 +15,7 @@
 
 /* Language remains available when header branding is disabled. */
 .header .header-actions{display:flex;align-items:center;justify-content:flex-end;gap:20px;flex-shrink:0;flex-wrap:nowrap;white-space:nowrap}
-.header .brand{max-width:calc(100% - 52px)}
+.header .brand{max-width:calc(100% - 112px)}
 .header-unbranded{justify-content:flex-end}
 .header .language{margin:0;padding:0;border:0;gap:7px;color:#506f5d}
 html:not([lang=en]) .welcome h1{font-size:clamp(36px,4vw,57px);line-height:1.25;letter-spacing:-1px}
@@ -52,7 +52,7 @@ html:not([lang=en]) .consent>label{line-height:1.9}
 .language-globe{display:block;width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
 
 @media(max-width:760px){
-  .header .brand{flex:0 1 auto;min-width:0;max-width:calc(100% - 52px);gap:6px}
+  .header .brand{flex:0 1 auto;min-width:0;max-width:calc(100% - 96px);gap:6px}
   .header .brand-mark{width:24px;height:24px;flex:0 0 24px}
   .header .brand>.brand-copy{flex:0 1 auto;min-width:0}
   .header .brand-name{font-size:22px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;overflow-wrap:normal;flex:0 1 auto}
@@ -68,3 +68,7 @@ html:not([lang=en]) .consent>label{line-height:1.9}
 /* A compact globe opens the full language list at every screen size. */
 .header .language>.dropdown-trigger{width:40px;min-width:40px;max-width:40px;min-height:40px;gap:0;padding:9px;justify-content:center}
 #portal-language-value,.header .language .dropdown-chevron{display:none}
+
+/* Help remains an accessible icon-only action. */
+.header .help-link{display:flex;align-items:center;justify-content:center;width:40px;min-height:40px;padding:9px;border:0;background:none;color:#52675c;flex-shrink:0}
+.header .help-link:hover{color:var(--teal)}
