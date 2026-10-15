@@ -21,7 +21,7 @@ JSON overrides passed with `--brand-config` are merged over these defaults durin
 | `footerText` | `"Your Brand"` | Name beside the powered-by text. |
 | `footerLogoImage` | `""` | Optional footer image in place of the footer name. |
 
-The mobile header stays on one row. Language selection uses a compact globe button at every screen size. The menu lists full language names and marks the current selection. Long brand names and subtitles truncate only when needed; accessible names retain their full text.
+The mobile header stays on one row. The branding link fits its visible logo and text; unused header space is not clickable. The header contains only branding and language selection. Language selection uses a compact globe button at every screen size. The menu lists full language names and marks the current selection. Long brand names and subtitles truncate only when needed; accessible names retain their full text.
 
 ### Browser tab title
 
