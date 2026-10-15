@@ -1,0 +1,19 @@
+{
+  "name": "omada-captive-portal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A configurable, multilingual guest Wi-Fi portal compatible with Omada controllers",
+  "license": "MIT",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/preview.mjs",
+    "check": "node --check src/dropdown.js && node --check src/portal.js && node --check src/languages.js && node --check src/preview.js && node --check scripts/build.mjs && node --check scripts/prepare-controller.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xKhronoz/omada-captive-portal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xKhronoz/omada-captive-portal/issues"
+  }
+}

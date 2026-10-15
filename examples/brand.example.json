@@ -1,0 +1,21 @@
+{
+  "headerText": "My Venue",
+  "headerSubtitle": "Guest Wi-Fi",
+  "showBrandLogo": true,
+  "showBrandName": true,
+  "showHeaderSubtitle": true,
+  "connectionName": "My Guest Network",
+  "logoImage": "",
+  "connectionIconImage": "",
+  "faviconImage": "mark.svg",
+  "footerText": "My Venue",
+  "footerLogoImage": "",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "defaultLanguage": "en",
+  "detectBrowserLanguage": true,
+  "showRedirectionCountdownAfterAuthorization": true,
+  "redirectionCountdownSeconds": 5
+}

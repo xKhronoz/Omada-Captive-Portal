@@ -1,0 +1,20 @@
+var Ajax = {
+    post: function (url, data, fn) {
+        if (window.portalPreviewRequest) return window.portalPreviewRequest(url, data, fn);
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", url, true);
+        xhr.timeout = 15000;
+        xhr.setRequestHeader("Content-Type", "application/json");
+        function fail() { window.portalRequestFailed && window.portalRequestFailed(url); }
+        xhr.onload = function () {
+            if (xhr.status >= 200 && xhr.status < 300) {
+                try { JSON.parse(xhr.responseText); } catch (_) { fail(); return; }
+                try { fn.call(xhr, xhr.responseText); } catch (_) { fail(); return; }
+                window.portalRequestComplete && window.portalRequestComplete(url);
+            } else fail();
+        };
+        xhr.onerror = fail;
+        xhr.ontimeout = fail;
+        xhr.send(data);
+    }
+};

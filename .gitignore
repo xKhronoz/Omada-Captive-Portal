@@ -1,0 +1,17 @@
+# Generated output and local dependencies
+node_modules/
+build/
+dist/
+*.zip
+
+# Operator templates, private assets and local configuration
+private/
+demo.zip
+.env
+.env.*
+!.env.example
+
+# Local editor / OS files
+.DS_Store
+.vscode/
+.idea/

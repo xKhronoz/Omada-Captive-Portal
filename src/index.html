@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f7f5">
+  <meta name="description" content="Welcome to our guest Wi-Fi. A simple way to get connected.">
+  <title>Welcome · Guest Wi-Fi</title>
+  <link id="portal-favicon" rel="icon" href="mark.svg">
+  <link rel="stylesheet" href="survey.css">
+  <link rel="stylesheet" href="portal.css?v=dropdown-padding2">
+</head>
+<body>
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="wifi" viewBox="0 0 24 24"><path d="M2 8.5a16 16 0 0 1 20 0M5.5 12a11 11 0 0 1 13 0M9 15.5a5 5 0 0 1 6 0"/><circle cx="12" cy="19" r="1" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6z"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 4 2c-1 .5-1.5 1-1.5 2m0 3h.01"/></symbol>
+    <symbol id="ticket" viewBox="0 0 24 24"><path d="M4 5h16v5a2 2 0 0 0 0 4v5H4v-5a2 2 0 0 0 0-4zM15 5v3m0 3v2m0 3v3"/></symbol>
+    <symbol id="user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></symbol>
+    <symbol id="globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></symbol>
+  </defs></svg>
+  <div class="page-shell">
+    <header class="header">
+      <a id="header-brand" class="brand" href="#main" aria-label="Your Brand Guest Wi-Fi home"><svg id="default-brand-logo" class="brand-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><use href="#wifi"/></svg><img id="custom-brand-logo" class="brand-mark custom-brand-logo" alt="" hidden><span class="brand-copy"><span id="header-name" class="brand-name">Your Brand</span><span id="header-divider" class="brand-divider"></span><small id="header-subtitle">Guest Wi-Fi</small></span></a>
+      <div class="header-actions"><span class="language"></span><button class="help-link" type="button" data-dialog="help-dialog" aria-label="Need a hand?"><svg class="icon"><use href="#help"/></svg><span>Need a hand?</span></button></div>
+    </header>
+    <main id="main" class="main-layout">
+      <section class="welcome" aria-labelledby="welcome-title">
+        <div class="eyebrow"><span class="status-dot"></span> A WARM WELCOME. A SIMPLE CONNECTION.</div>
+        <h1 id="welcome-title">Make yourself <br>at <span class="home-word">home.<svg viewBox="0 0 240 18" aria-hidden="true"><path d="M4 13Q108 0 233 9"/></svg></span><br>Get connected.</h1>
+        <p class="welcome-copy">A little work. A little downtime. Whatever brings<br class="desktop-break"> you here, your connection starts here.</p>
+        <div class="signal-scene" aria-hidden="true">
+          <svg viewBox="0 0 530 280" class="signal-art">
+            <defs><linearGradient id="arc-fill" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#22ae9a"/><stop offset="1" stop-color="#0a665e"/></linearGradient><linearGradient id="disc-fill" x1="0" x2="0.5" y1="0" y2="1"><stop stop-color="#fbfffd"/><stop offset="1" stop-color="#e0eee6"/></linearGradient><filter id="soft-shadow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="9"/></filter></defs>
+            <ellipse cx="273" cy="238" rx="156" ry="14" fill="#28594b" opacity=".1" filter="url(#soft-shadow)"/>
+            <g transform="translate(8 -6)"><ellipse cx="260" cy="161" rx="208" ry="93" fill="none" stroke="#d9e5dc" stroke-dasharray="3 7" transform="rotate(-16 260 161)"/><ellipse cx="260" cy="162" rx="150" ry="66" fill="none" stroke="#d9e5dc" transform="rotate(-16 260 162)"/>
+            <path d="M148 197V137a112 112 0 0 1 224 0v60h-34v-60a78 78 0 0 0-156 0v60Z" fill="#075e55" transform="translate(7 9)"/>
+            <path d="M148 197V137a112 112 0 0 1 224 0v60h-34v-60a78 78 0 0 0-156 0v60Z" fill="url(#arc-fill)"/>
+            <path d="M162 195v-58a98 98 0 0 1 196 0v58" fill="none" stroke="#57c7b5" stroke-width="1.5" opacity=".55"/>
+            <rect x="204" y="121" width="110" height="110" rx="32" fill="#bdd8ca" transform="rotate(-9 259 176) translate(5 7)"/>
+            <rect x="204" y="121" width="110" height="110" rx="32" fill="url(#disc-fill)" stroke="#fff" stroke-width="2" transform="rotate(-9 259 176)"/>
+            <g transform="translate(229 144) rotate(-9 30 30)" fill="none" stroke="#157c6c" stroke-width="5" stroke-linecap="round"><path d="M3 18a44 44 0 0 1 54 0M13 29a28 28 0 0 1 34 0M24 40a11 11 0 0 1 12 0"/><circle cx="30" cy="51" r="3" fill="#157c6c" stroke="none"/></g>
+            <circle cx="66" cy="200" r="7" fill="#b5c992"/><circle cx="443" cy="98" r="8" fill="#19a28d"/><circle cx="395" cy="225" r="4" fill="#a4bbad"/><path d="M106 84v14m-7-7h14" stroke="#98ac9e" stroke-width="2"/><path d="m418 164 5-9 5 9-5 9Z" fill="#c2cfb7"/>
+            </g>
+          </svg>
+          <span class="scene-tag"><span class="status-dot"></span> A world of possibilities. One connection.</span>
+        </div>
+      </section>
+      <section class="connect-column" aria-labelledby="connect-title">
+        <div class="connect-card">
+          <div class="card-top"><span class="wifi-tile"><svg id="default-connection-icon" class="icon" aria-hidden="true"><use href="#wifi"/></svg><img id="custom-connection-icon" alt="" hidden></span><span class="network-pill"><span class="status-dot"></span><span id="network-name">Guest Wi-Fi</span></span></div>
+          <div id="sign-in-view">
+            <h2 id="connect-title">You're in good company.</h2>
+            <p class="card-copy" id="method-description">Enter your access code to get online.</p>
+            <nav id="method-tabs" class="method-tabs" aria-label="Sign-in method" hidden></nav>
+            <div id="initial-status" class="initial-status" role="status">Getting your connection ready…</div>
+            <div id="oper-hint" role="alert" tabindex="-1"></div>
+            <form id="login-form" novalidate>
+              <div id="input-voucher" class="field" style="display:none"><label for="voucherCode">Access code</label><div class="input-wrap"><svg class="icon"><use href="#ticket"/></svg><input id="voucherCode" name="voucherCode" type="text" placeholder="Enter your voucher code" autocomplete="off" autocapitalize="none" spellcheck="false" aria-describedby="voucher-help"></div><p id="voucher-help" class="field-hint">You'll find this on the voucher provided by your host.</p></div>
+              <div id="input-user" class="field" style="display:none"><label for="username">Username</label><div class="input-wrap"><svg class="icon"><use href="#user"/></svg><input id="username" name="username" type="text" placeholder="Enter your username" autocomplete="username" autocapitalize="none" spellcheck="false"></div></div>
+              <div id="input-password" class="field" style="display:none"><label for="password">Password</label><div class="input-wrap"><input id="password" name="password" type="password" class="password" placeholder="Enter your password" autocomplete="current-password"><button class="password-toggle" type="button" aria-label="Show password" data-password="password">Show</button></div></div>
+              <div id="input-simple" class="field" style="display:none"><label for="simplePassword">Wi-Fi password</label><div class="input-wrap"><input id="simplePassword" name="simplePassword" type="password" class="password" placeholder="Enter the password from your host" autocomplete="current-password"><button class="password-toggle" type="button" aria-label="Show password" data-password="simplePassword">Show</button></div></div>
+              <div id="input-phone-num" class="field" style="display:none"><div class="phone-fields"><div><label for="country-code">Country code</label><input id="country-code" class="input" type="tel" autocomplete="tel-country-code" aria-label="Country code"></div><div><label for="phone-number">Phone number</label><input id="phone-number" name="phone-number" class="input" type="tel" placeholder="Phone number" autocomplete="tel-national"></div></div></div>
+              <div id="input-verify-code" class="field" style="display:none"><label for="verify-code">Verification code</label><div class="input-wrap"><input id="verify-code" name="verify-code" type="text" placeholder="Enter SMS code" autocomplete="one-time-code" inputmode="numeric"><button id="get-code" type="button" class="text-button">Send code</button></div></div>
+              <input name="clientMac" id="cMac" type="hidden"><input name="radiusSvrIp" id="radiusServerIp" type="hidden">
+            </form>
+            <div class="consent"><input id="accept-terms" type="checkbox"><label for="accept-terms">I agree to the <button type="button" class="inline-link" data-dialog="terms-dialog">Terms of Use</button> and <button type="button" class="inline-link" data-dialog="privacy-dialog">Privacy Notice</button>.</label></div>
+            <div id="button-area"><button id="button-login" class="connect-button" type="button" disabled>Connect to Wi-Fi <svg class="icon"><use href="#arrow"/></svg></button></div>
+            <a id="hotspot-other-login" href="#" hidden>Other sign-in methods</a>
+            <p class="host-help">No access code? <button class="inline-link" type="button" data-dialog="help-dialog">Ask your host <span aria-hidden="true">↗</span></button></p>
+          </div>
+          <div id="success-view" hidden role="status"><div class="success-icon"><svg class="icon"><use href="#check"/></svg></div><h2 id="success-title">You're all connected.</h2><p id="success-copy">Make yourself at home. You can now close this window and enjoy your connection.</p><div id="redirect-panel" class="redirect-panel" role="status" aria-live="polite" aria-atomic="true" hidden><p><span>Redirecting in</span> <strong id="redirect-count">5</strong> <span>seconds.</span></p><button id="redirect-now" type="button" class="connect-button">Continue now</button></div><button id="preview-again" type="button" class="connect-button" hidden>Try another sign-in method</button></div>
+          <div class="card-footer"><svg class="icon"><use href="#shield"/></svg><span>Your next connection starts here.</span></div>
+        </div>
+        <p class="connection-note"><svg class="icon"><use href="#wifi"/></svg> A moment to connect. A space to belong.</p>
+      </section>
+    </main>
+    <section class="essentials" aria-label="Good to know"><div><span class="essential-icon"><svg class="icon"><use href="#globe"/></svg></span><p><strong>A little closer to everything</strong><span>Browse, catch up, or find your next idea.</span></p></div><div><span class="essential-icon"><svg class="icon"><use href="#shield"/></svg></span><p><strong>Browse with care</strong><span>Use HTTPS to keep your activity private.</span></p></div><div><span class="essential-icon"><svg class="icon"><use href="#help"/></svg></span><p><strong>A real person can help</strong><span>Your host is here if you need a hand.</span></p></div></section>
+    <footer class="footer"><span>Powered by <strong id="footer-name">Your Brand</strong><img id="custom-footer-logo" alt="" hidden><span class="footer-dot">·</span> Made for connection.</span><div><button type="button" data-dialog="privacy-dialog">Privacy</button><button type="button" data-dialog="terms-dialog">Terms</button></div></footer>
+  </div>
+  <aside id="preview-notice" hidden><span><strong>Interactive preview</strong> No network access is granted.</span><label id="preview-method-label" for="preview-method">Portal type</label><span id="preview-picker"></span></aside>
+  <dialog id="help-dialog"><div class="dialog-heading"><span class="eyebrow">A LITTLE HELP</span><button type="button" class="dialog-close" aria-label="Close help">×</button></div><h2>Let's get you connected.</h2><p>Ask your host for a Wi-Fi voucher or account details. Already have them? Enter them exactly as provided.</p><ol><li>Stay connected to this guest Wi-Fi network.</li><li>Enter your details and accept the terms.</li><li>Select “Connect to Wi-Fi” and wait for confirmation.</li></ol><p>If the page stops responding, reconnect to the Wi-Fi and open this page again. Your host can check expired codes or account limits.</p><button class="dialog-done" type="button">Got it</button></dialog>
+  <dialog id="terms-dialog"><div class="dialog-heading"><span class="eyebrow">BEFORE YOU CONNECT</span><button type="button" class="dialog-close" aria-label="Close terms">×</button></div><h2>Terms of Use</h2><p>This guest network is provided for lawful, considerate use. By connecting, you agree to:</p><ul><li>Respect other guests and avoid excessive use that affects the network.</li><li>Keep your access code and account details to yourself.</li><li>Avoid illegal activity, unauthorised access, and interference with other devices.</li></ul><p>Access may be limited or withdrawn by the network operator. Availability and speed depend on network conditions. Ask your host about any session or usage limits.</p><button class="dialog-done" type="button">Back to sign in</button></dialog>
+  <dialog id="privacy-dialog"><div class="dialog-heading"><span class="eyebrow">YOUR CONNECTION</span><button type="button" class="dialog-close" aria-label="Close privacy notice">×</button></div><h2>Privacy Notice</h2><p>The network operator processes the device and authentication information needed to provide guest access. Depending on the configured sign-in method, this may include your device address, account details, phone number, and connection records.</p><p>This page does not store your password in your browser. The network operator manages logging, retention, and access policies. Ask your host for the operator's full privacy policy and contact details.</p><p>Guest Wi-Fi does not by itself encrypt your browsing. Use HTTPS websites and avoid sharing sensitive information on untrusted connections.</p><button class="dialog-done" type="button">Back to sign in</button></dialog>
+  <div id="hotspot-selector" hidden><div class="title"><span class="text">Other sign-in methods</span><button id="hotspot-selector-close" type="button" aria-label="Close sign-in methods">×</button></div></div>
+  <div id="form-auth-msg" role="dialog" aria-modal="true" aria-labelledby="form-auth-title"><div id="form-auth-outer"><button id="form-auth-close" type="button" aria-label="Close survey"></button><div id="form-auth-inner"><div id="form-auth-header"><div id="form-auth-title"></div><div id="form-auth-note"></div></div><div id="form-auth-content"></div><div id="form-auth-footer"><button id="form-auth-submit" type="button">Submit</button></div></div></div></div>
+  <script src="jquery.min.js"></script>
+  <script src="preview.js"></script>
+  <script src="portal-config.js"></script>
+  <script src="dropdown.js?v=dropdown-padding2"></script>
+  <script src="languages.js?v=dropdown-padding2"></script>
+  <script src="portal.js?v=dropdown-padding2"></script>
+  <script src="controller.js"></script>
+</body>
+</html>
