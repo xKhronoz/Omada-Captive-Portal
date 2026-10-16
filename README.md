@@ -4,6 +4,18 @@ A modern, responsive guest Wi-Fi portal designed to be imported into an Omada co
 
 The repository uses neutral **Your Brand** placeholders. Official vendor logos and the controller template are supplied separately; see [Attribution and third-party material](THIRD_PARTY_NOTICES.md).
 
+## Screenshots
+
+The interactive preview uses neutral **Your Brand** placeholders and simulated sign-in. Branding, connection name and enabled languages are configurable.
+
+### Desktop
+
+![Desktop guest Wi-Fi portal with the welcome panel and access-code sign-in](docs/screenshots/desktop.jpg)
+
+| Mobile | Language selection |
+| --- | --- |
+| <img src="docs/screenshots/mobile.jpg" alt="Mobile portal with a single-row header, globe language button and icon-only Help" width="320"> | <img src="docs/screenshots/languages.jpg" alt="Chinese portal with the language menu showing English, Chinese, Bahasa Melayu and Tamil" width="320"> |
+
 ## Features
 
 - Independent header logo and name visibility; keep Guest Wi-Fi visible without a divider when both are hidden.
